@@ -1,0 +1,13 @@
+% doi parametri: slide-ul curent, și numărul total de slide-uri
+
+% contoarul frameit reprezintă numărul punctului
+\newcommand{\slidedotsIteration}[2]{
+	\ifnum \value{frameit} < #1 \color{black} \else		% înainte de poziția curentă
+		\ifnum \value{frameit} = #1 \color{red!80!green} \else	% poziția curentă
+			\color{black!30!white}								% restul
+	\fi\fi
+	$\cdot$										% desenez punctul
+	\addtocounter{frameit}{1}					% incrementez
+
+	\ifnum \value{frameit} < #2 \slidedotsIteration{#1}{#2}\fi	% apelez recursiv
+	}
