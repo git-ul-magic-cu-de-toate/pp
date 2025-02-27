@@ -1,0 +1,36 @@
+#lang racket
+;(define (my-split L x result)
+ ; (cond [(null? L)
+  ;       result]
+   ;     [else
+    ;     (let-values ([(start stop)
+     ;                  (splitf-at L (lambda (i)
+      ;                                (not (equal? x i))))])
+
+(define (split-list list-of-x target)
+
+  ;; A predicate to determine to split the list
+  (define (split-at? value)
+    (not (equal? value target)))
+
+  ;; Inner function to pass around state as accumulator
+  (define (my-split list-of-x target accumulator)
+    (cond
+     ;; Input exhausted
+     [(null? list-of-x)
+      accumulator]
+     [else
+      (let-values
+        ([(front-list back-list)
+          (splitf-at list-of-x split-at?)])    
+        (cond
+          ;; Input exhausted
+          [(null? back-list)
+           (append accumulator (list front-list))]
+          [else
+            (my-split (rest back-list)
+                      target
+                      (append accumulator (list front-list)))]))]))
+  ;; trampoline
+  (my-split list-of-x target null))
+           
