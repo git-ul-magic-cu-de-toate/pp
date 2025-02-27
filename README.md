@@ -1,4 +1,4 @@
-# Paradigme de Programare (PP) - 2022-2023 @ CTI - Seria CC - UNSTPB
+# Paradigme de Programare (PP) - 2022-2023 @ CTI - UNSTPB
 
 Acest repository conține materiale pentru cursul **Paradigme de Programare** din anul universitar **2022-2023**, de la **Facultatea de Automatică și Calculatoare, Universitatea Politehnica din București**.
 
