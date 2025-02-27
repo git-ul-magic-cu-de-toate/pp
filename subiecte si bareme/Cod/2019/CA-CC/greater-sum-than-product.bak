@@ -1,0 +1,10 @@
+#lang racket
+
+(define (greater-sum L)
+  (let ((check? (λ (l)
+                  (>= (foldr + 0 l) (foldr * 1 l)
+                  ))))
+        (filter (λ (p) (check? p)) L)
+        ))
+
+(greater-sum '((1 2 3) (4 5) (1 2) (0.5 0.5)))
