@@ -1,119 +1,56 @@
-# pp
-## Structura in mare a repo-ului
-```
-.
-├── README.md
-├── curs
-│   ├── cb # cursuri seria CB cu M.B.
-│   ├── cheatsheet
-│   ├── cod
-│   │   ├── 1 Introducere
-│   │   ├── 11-1 Limbajul Prolog
-│   │   ├── 11-2 Puzzle-uri in Prolog
-│   │   ├── 2 Limbajul Racket
-│   │   ├── 3 Recursivitate
-│   │   ├── 4 Functii ca valori de prim rang. Functionale
-│   │   ├── 5 Legarea variabilelor. Evaluare contextuala
-│   │   ├── 6 Intarzierea evaluarii
-│   │   ├── 7 Limbajul Haskell
-│   │   ├── 8 Evaluare lenesa in Haskell
-│   │   ├── 9 Clase in Haskell
-│   │   └── PPInchidere.java
-│   ├── curs1 # CC cu Olaru, exemple din tipurile de programare
-│   ├── curs2 # CC cu Olaru
-│   ├── exam
-│   │   ├── docx
-│   │   │   ├── Cheatsheet PP.docx
-│   │   │   ├── List comprehensions in Haskell.docx
-│   │   │   └── Modele examen grupate.docx
-│   │   ├── nan
-│   │   │   ├── Examen
-│   │   │   │   ├── 2018
-│   │   │   │   ├── 2019
-│   │   │   │   └── 2022
-│   │   │   ├── clase-solutii
-│   │   │   ├── evaluare-lenesa-solutii
-│   │   │   ├── functionale-solutii
-│   │   │   └── intro-solutii
-│   │   ├── pdf # pdf-uri pregatire M. Nan (documente + notite scrise de mana)
-│   │   ├── png # screenshot pregatire online M. Nan (documente + notite scrise de mana)
-│   │   ├── print # ce anume mi-am printat eu pentru examen ca cheatsheturi
-│   │   └── subiecte si bareme
-│   │       ├── Cod
-│   │       │   ├── 2018
-│   │       │   ├── 2019
-│   │       │   ├── 2020 (A, B, C, D)
-│   │       │   ├── 2021
-│   │       │   └── 2022
-│   │       └── etc (sunt mai multe)
-│   ├── pdf # alte documente cu informatii ajutatoare
-│   └── res
-│       ├── EN # paper-uri preluate de pe net
-│       └── bucati de cod in rkt si alte materiale de pe moodle
-├── lab
-│   ├── labv1
-│   │   ├── Lab1
-│   │   ├── Lab10
-│   │   ├── Lab11
-│   │   ├── Lab12
-│   │   ├── Lab2
-│   │   ├── Lab3
-│   │   ├── Lab4
-│   │   ├── Lab5
-│   │   ├── Lab6
-│   │   ├── Lab7
-│   │   ├── Lab8
-│   │   └── Lab9
-│   ├── labv2
-│   │   └── asemanator labv1
-│   ├── labv3
-│   │   asemanator labv1
-│   ├── sol
-│   │   ├── clase-solutii
-│   │   │   ├── TestPP.hs
-│   │   │   ├── clase-exemplu.hs
-│   │   │   └── clase-sol.hs
-│   │   ├── evaluare-lenesa-solutii
-│   │   │   ├── TestPP.hs
-│   │   │   ├── exemple.hs
-│   │   │   └── lazy-sol.hs
-│   │   ├── intro-solutii
-│   │   │   ├── TestPP.hs
-│   │   │   ├── exemple.hs
-│   │   │   └── intro-sol.hs
-│   │   └── tipuri-solutii
-│   │       ├── TestPP.hs
-│   │       └── tipuri-sol.hs
-│   └── teste_lab
-│       ├── Screenshot_20230524-190622_Moodle.pdf
-│       ├── imagini # screenshoturi
-│       ├── teste_lab_X # pdfuri colegi
-│       └── teste_merged.pdf
-└── teme
-    ├── tema1 # contin si fisierele compilate!
-    │   ├── etapa1
-    │   ├── etapa2
-    │   │   └── old
-    │   ├── etapa3
-    │   ├── etapa4
-    │   │   └── tema
-    │   │       ├── etapa2.rkt
-    │   │       ├── etapa3.rkt
-    │   │       └── etapa4.rkt
-    │   ├── hbrnm rkt.docx # ciorna =)))
-    │   └── idk # nu stiu ce se intampla aici
-    │       ├── Untitled44.rkt
-    │       └── Untitleddd.rkt
-    ├── tema1_v2 # o tema mai veche decat tema1
-    ├── tema2
-    │   ├── BinaryNumber_114p=D.txt
-    │   ├── etapa1
-    │   ├── etapa1 bis
-    │   └── etapa2
-    ├── tema2_v2 # o tema mai veche decat tema2
-    │   ├── etapa1
-    │   └── etapa2
-    └── tema3
-        ├── v1 # 2 teme diferite de tema3 de prolog
-        └── v2
-```
+# Paradigme de Programare (PP) - 2022-2023 @ CTI - Seria CC - UNSTPB
+
+Acest repository conține materiale pentru cursul **Paradigme de Programare** din anul universitar **2022-2023**, de la **Facultatea de Automatică și Calculatoare, Universitatea Politehnica din București**.
+
+## 📂 Structura Repo-ului
+
+Repository-ul este organizat în mai multe directoare pentru a facilita accesul rapid la resursele relevante:
+
+### 1️⃣ **Curs** (`curs/`)
+Conține materiale de curs, exemple de cod și resurse suplimentare.
+- **`cb/`** - Materiale curs seria CB (M.B.)
+- **`cheatsheet/`** - Fișiere cu sintaxă esențială și concepte cheie
+- **`cod/`** - Exemple de cod pentru diverse paradigme și concepte:
+  - Introducere în PP
+  - Limbaje: **Racket, Haskell, Prolog**
+  - Concepte avansate: **recursivitate, evaluare leneșă, clase în Haskell**
+- **`exam/`** - Resurse pentru pregătirea examenului:
+  - **Fișiere .docx și .pdf** cu cheatsheet-uri, subiecte din anii trecuți și soluții
+  - **Subiecte de examen și bareme** organizate pe ani
+- **`pdf/`** - Documentație adițională
+- **`res/`** - Resurse utile:
+  - **Paper-uri științifice**
+  - **Cod Racket și alte materiale** de pe Moodle
+
+### 2️⃣ **Laboratoare** (`lab/`)
+Cuprinde materiale și soluții pentru laboratoare.
+- **`labv1/`, `labv2/`, `labv3/`** - Diferite versiuni de laboratoare
+- **`sol/`** - Soluții pentru exercițiile de laborator (în Haskell)
+- **`teste_lab/`** - Teste și screenshot-uri relevante pentru laborator
+
+### 3️⃣ **Teme** (`teme/`)
+Arhivă cu teme de casă pentru diferite etape ale cursului.
+- **Organizate pe etape (etapa1, etapa2, etc.)**
+- Conține **ciorne, fișiere de cod sursă, versiuni vechi ale temelor**
+- **Exemple în Racket și Prolog**
+
+---
+
+## 🛠 Limbaje de Programare
+Cursul acoperă mai multe paradigme și limbaje de programare:
+- 🐍 **Racket** - Limbaj funcțional derivat din Scheme
+- 💡 **Haskell** - Limbaj funcțional pur, evaluare leneșă
+- 🔎 **Prolog** - Paradigma logică, utilizată pentru rezolvarea puzzle-urilor
+
+## 📖 Resurse Recomandate
+- [Site-ul oficial Racket](https://racket-lang.org/)
+- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+- [SWI-Prolog](https://www.swi-prolog.org/)
+
+## 🤝 Contribuții
+Dacă ai materiale sau îmbunătățiri, te rog să contribui la acest repository printr-un **pull request** sau să deschizi un **issue**! ✨
+
+---
+
+📌 **Notă:** Acest repository este destinat exclusiv uzului educațional și nu înlocuiește cursurile și laboratoarele oficiale. 🚀
+
