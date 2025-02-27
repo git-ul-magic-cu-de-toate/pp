@@ -1,0 +1,11 @@
+#lang racket/gui
+(define (ceva L p1 p2)
+  (if (null? L)
+      '()
+      (if (equal? (list(car (car L))) (list p1))
+          (append (cons (p1 p2)) (ceva (cdr L) p1 p2))
+          (ceva (cdr L) p1 p2)
+          )
+      )
+  )
+(ceva '((1 . 2) (2 . 3) (3 . 4)) 2 6)
