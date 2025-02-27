@@ -1,0 +1,21 @@
+#lang racket
+(define (get-unstable-couples engagements mpref wpref)
+  (helper engagements mpref wpref '()))
+(define (helper engagements mpref wpref result)
+(if (null? engagements)
+        result
+        (if (better-match-exists? (cdr (car engagements))
+                                  (car (car engagements)) (get-pref-list mpref (cdr (car engagements))) wpref engagements)
+            (helper (cdr engagements) mpref wpref (append result (list (car (car engagements)) (car (cdr engagements)))))
+            (helper (cdr engagements) mpref wpref result)
+            )))
+(define M
+  '([adi  ana  bia cora]
+    [bobo cora ana bia ]
+    [cos  cora bia ana ]))
+(define W
+  '([ana  bobo adi cos ]
+    [bia  adi  cos bobo]
+    [cora bobo cos adi ]))
+(define L '((ana . cos) (bia . adi) (cora . bobo)))
+(get-unstable-couples L M W)

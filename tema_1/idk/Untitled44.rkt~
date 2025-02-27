@@ -1,0 +1,9 @@
+#lang racket
+(define my-lst '((1 . 2) (3 . 4) (5 . 6)))
+(define (combine my-list)
+  ;; mai intai fara let-uri
+  (if (null? my-list)
+      '()
+     (append (append (list (car (car my-list))) (combine (cdr my-list))) (list (cdr (car my-list))))
+  ))
+(combine my-lst)
